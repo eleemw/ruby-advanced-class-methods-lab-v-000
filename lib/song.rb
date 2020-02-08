@@ -25,7 +25,7 @@ class Song
 
   def self.new_by_name(name)
     song = self.new     # instantiates song
-    self.name = name    # w/ name property
+    song.name = name    # w/ name property
     song
   end
 
