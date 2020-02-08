@@ -44,7 +44,7 @@ class Song
   end
 
   def self.alphabetical
-    @@all.sort_by {|song| song.name}          #returns all song instances in alphabetical order by song name
+    self.all.sort_by {|song| song.name}          #returns all song instances in alphabetical order by song name
   end
 
   def self.new_from_filename(filename)        #initializes a song and artist_name based on filename format
