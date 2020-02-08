@@ -18,8 +18,10 @@ class Song
 #  end
 
   def self.create
-    self.all << self.new 
-    @@all[-1]           #returns new song (last element added to @@all array)
+    song = self.new
+    save
+    
+    # @@all[-1]           #returns new song (last element added to @@all array)
   end
 
   def self.new_by_name(name)
