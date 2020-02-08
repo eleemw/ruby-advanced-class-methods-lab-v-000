@@ -18,7 +18,7 @@ class Song
 #  end
 
   def self.create
-    @@all << self.new   #instantiates and saves the song
+    self.class.all << self.new   #instantiates and saves the song
     @@all[-1]           #returns new song (last element added to @@all array)
   end
 
