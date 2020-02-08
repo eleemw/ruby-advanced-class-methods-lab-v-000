@@ -20,7 +20,7 @@ class Song
   def self.create
     song = self.new
     save
-    
+
     # @@all[-1]           #returns new song (last element added to @@all array)
   end
 
