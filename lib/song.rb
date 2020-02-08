@@ -11,12 +11,6 @@ class Song
     self.class.all << self
   end
 
-#  def self.create       # replaced w/ .create (rb:19)
-#    song = self.new     # instantiates song (new instance)
-#    @@all << song       # saves the song
-#    song                # returns the new song that was created
-#  end
-
   def self.create
     song = self.new #could also use song = Song.new for this line
     song.save
