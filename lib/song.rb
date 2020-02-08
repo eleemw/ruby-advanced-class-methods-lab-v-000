@@ -58,7 +58,7 @@ class Song
   end
 
   def self.create_from_filename(filename)
-    @@all << new_from_filename(filename)      # initializes and saves a song and artist_name based on filename format
+    self.all << new_from_filename(filename)      # initializes and saves a song and artist_name based on filename format
   end
 
   def self.destroy_all
