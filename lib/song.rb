@@ -20,8 +20,7 @@ class Song
   def self.create
     song = self.new
     song.save
-
-     @@all[-1]           #returns new song (last element added to @@all array)
+    song
   end
 
   def self.new_by_name(name)
