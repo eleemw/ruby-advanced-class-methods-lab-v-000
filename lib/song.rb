@@ -18,7 +18,7 @@ class Song
 #  end
 
   def self.create
-    song = self.new
+    song = self.new #could also use song = Song.new for this line
     song.save
     song
   end
