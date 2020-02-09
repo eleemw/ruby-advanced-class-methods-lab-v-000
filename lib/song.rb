@@ -45,6 +45,7 @@ class Song
     file = filename.chomp(".mp3").split(' - ')
     artist_name = file[0]
     song_name = file[1]
+
     song = self.new
     song.name = song_name
     song.artist_name = artist_name
